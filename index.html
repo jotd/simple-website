@@ -75,6 +75,32 @@
                 margin: 0.5rem 0;
             }
         }
+
+    
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 80px;  /* Add this line for space below */
+}
+
+.buy-button {
+    background-color: #68CC58;
+    color: white;
+    border: none;
+    padding: 24px 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #5ab54c;
+}
+
+@media (max-width: 600px)
     </style>
 </head>
 <body>
@@ -105,10 +131,19 @@
             <h2>Contact</h2>
             <p>Get in touch with me today! Email: contactjotd@email.com</p>
         </div>
+
+        <div class="button-container">
+                <button class="buy-button">Buy Now</button>
+            </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Jot's Simple Website. All rights reserved.</p>
     </footer>
+    <script>
+        document.querySelector('.buy-button').addEventListener('click', function() {
+            alert('Thank you for your interest! This button is just for demonstration.');
+        });
+    </script>
 </body>
 </html>
