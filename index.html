@@ -54,6 +54,14 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
+        .logo-heading {
+            text-align: center;
+            margin: 40px auto;
+            color: #333;
+            font-size: 24px;
+            max-width: 800px;  /* matches your main content width */
+        }
+
         footer {
             background-color: #08090A;
             color: white;
@@ -103,6 +111,9 @@
 @media (max-width: 600px)
     </style>
 </head>
+
+
+
 <body>
     <header>
         <h1>Welcome to Jot's Website</h1>
@@ -117,17 +128,172 @@
     </nav>
 
     <main>
-        <div class="card">
+        <div class="button-container">
+                <button class="buy-button">Buy Now</button>
+            </div>
+
+            <div id="about" class="card">
             <h2>About Us</h2>
             <p>Welcome to our website! We're dedicated to providing the best experience for our visitors.</p>
         </div>
 
-        <div class="card">
+<h2 class="logo-heading"> We Partner with the Top Computer Science Universities</h2>
+        
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <!-- [Previous gradients and filters remain the same] -->
+    <linearGradient id="cmuGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4B2B"/>
+      <stop offset="100%" style="stop-color:#C41230"/>
+    </linearGradient>
+    
+    <linearGradient id="mitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BA1F34"/>
+      <stop offset="100%" style="stop-color:#8B1228"/>
+    </linearGradient>
+    
+    <linearGradient id="gtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EAAA00"/>
+      <stop offset="100%" style="stop-color:#B58603"/>
+    </linearGradient>
+    
+    <linearGradient id="berkeleyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003C6C"/>
+      <stop offset="100%" style="stop-color:#001F3F"/>
+    </linearGradient>
+    
+    <linearGradient id="stanfordGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A1151A"/>
+      <stop offset="100%" style="stop-color:#8C1515"/>
+    </linearGradient>
+    
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B3FA0"/>
+      <stop offset="100%" style="stop-color:#4A2B6E"/>
+    </linearGradient>
+    
+    <linearGradient id="umdGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF2B2B"/>
+      <stop offset="100%" style="stop-color:#E21833"/>
+    </linearGradient>
+    
+    <linearGradient id="ritGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F87D0B"/>
+      <stop offset="100%" style="stop-color:#F76902"/>
+    </linearGradient>
+
+    <filter id="iosShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="glossOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Carnegie Mellon -->
+  <g transform="translate(50, 50)">
+    <g filter="url(#iosShadow)">
+      <rect width="150" height="150" rx="35" fill="url(#cmuGradient)"/>
+      <text x="75" y="85" fill="white" text-anchor="middle" font-size="60" font-weight="bold">CM</text>
+      <rect width="150" height="150" rx="35" fill="url(#glossOverlay)"/>
+    </g>
+    <text x="75" y="185" fill="#333333" text-anchor="middle" font-size="14" font-weight="600">Carnegie Mellon</text>
+  </g>
+
+  <!-- MIT -->
+  <g transform="translate(250, 50)">
+    <g filter="url(#iosShadow)">
+      <rect width="150" height="150" rx="35" fill="url(#mitGradient)"/>
+      <g transform="translate(30, 60)">
+        <path d="M0 0 L90 0 M0 15 L90 15 M0 30 L90 30" 
+              stroke="white" stroke-width="12" fill="none"/>
+      </g>
+      <rect width="150" height="150" rx="35" fill="url(#glossOverlay)"/>
+    </g>
+    <text x="75" y="185" fill="#333333" text-anchor="middle" font-size="14" font-weight="600">MIT</text>
+  </g>
+
+  <!-- Georgia Tech -->
+  <g transform="translate(450, 50)">
+    <g filter="url(#iosShadow)">
+      <rect width="150" height="150" rx="35" fill="url(#gtGradient)"/>
+      <text x="75" y="85" fill="white" text-anchor="middle" font-size="60" font-weight="bold">GT</text>
+      <rect width="150" height="150" rx="35" fill="url(#glossOverlay)"/>
+    </g>
+    <text x="75" y="185" fill="#333333" text-anchor="middle" font-size="14" font-weight="600">Georgia Tech</text>
+  </g>
+
+  <!-- Berkeley -->
+  <g transform="translate(650, 50)">
+    <g filter="url(#iosShadow)">
+      <rect width="150" height="150" rx="35" fill="url(#berkeleyGradient)"/>
+      <text x="75" y="85" fill="white" text-anchor="middle" font-size="60" font-weight="bold">UC</text>
+      <rect width="150" height="150" rx="35" fill="url(#glossOverlay)"/>
+    </g>
+    <text x="75" y="185" fill="#333333" text-anchor="middle" font-size="14" font-weight="600">UC Berkeley</text>
+  </g>
+
+  <!-- Stanford -->
+  <g transform="translate(50, 250)">
+    <g filter="url(#iosShadow)">
+      <rect width="150" height="150" rx="35" fill="url(#stanfordGradient)"/>
+      <text x="75" y="85" fill="white" text-anchor="middle" font-size="60" font-weight="bold">SU</text>
+      <rect width="150" height="150" rx="35" fill="url(#glossOverlay)"/>
+    </g>
+    <text x="75" y="185" fill="#333333" text-anchor="middle" font-size="14" font-weight="600">Stanford</text>
+  </g>
+
+  <!-- Johns Hopkins -->
+  <g transform="translate(250, 250)">
+    <g filter="url(#iosShadow)">
+      <rect width="150" height="150" rx="35" fill="url(#purpleGradient)"/>
+      <text x="75" y="85" fill="white" text-anchor="middle" font-size="60" font-weight="bold">JH</text>
+      <rect width="150" height="150" rx="35" fill="url(#glossOverlay)"/>
+    </g>
+    <text x="75" y="185" fill="#333333" text-anchor="middle" font-size="14" font-weight="600">Johns Hopkins</text>
+  </g>
+
+  <!-- University of Maryland -->
+  <g transform="translate(450, 250)">
+    <g filter="url(#iosShadow)">
+      <rect width="150" height="150" rx="35" fill="url(#umdGradient)"/>
+      <text x="75" y="85" fill="white" text-anchor="middle" font-size="55" font-weight="bold">MD</text>
+      <rect width="150" height="150" rx="35" fill="url(#glossOverlay)"/>
+    </g>
+    <text x="75" y="185" fill="#333333" text-anchor="middle" font-size="14" font-weight="600">U. of Maryland</text>
+  </g>
+
+  <!-- RIT -->
+  <g transform="translate(650, 250)">
+    <g filter="url(#iosShadow)">
+      <rect width="150" height="150" rx="35" fill="url(#ritGradient)"/>
+      <text x="75" y="85" fill="white" text-anchor="middle" font-size="60" font-weight="bold">RIT</text>
+      <rect width="150" height="150" rx="35" fill="url(#glossOverlay)"/>
+    </g>
+    <text x="75" y="185" fill="#333333" text-anchor="middle" font-size="14" font-weight="600">RIT</text>
+  </g>
+</svg>
+           
+      
+
+        <div id="services" class="card">
             <h2>Our Services</h2>
             <p>We offer a wide range of services to meet your needs. Contact us to learn more about how we can help you.</p>
         </div>
 
-        <div class="card">
+    
+
+        <div id="contact" class="card">
             <h2>Contact</h2>
             <p>Get in touch with me today! Email: contactjotd@email.com</p>
         </div>
